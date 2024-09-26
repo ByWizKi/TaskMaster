@@ -79,7 +79,7 @@ DATABASES = {
         'NAME': 'taskmaster_db',
         'USER': 'myuser',
         'PASSWORD': 'mypassword',
-        'HOST': 'db', 
+        'HOST': 'db',
         'PORT': '5432',
     }
 }
