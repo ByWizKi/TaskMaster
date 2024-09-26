@@ -14,9 +14,9 @@ exclude =
     *.egg,
     *.egg-info,
     manage.py,
-    migrations,
+    migrations/,
     backend/settings.py
 
 ignore =
     E203,
-    W503,
+    W503
