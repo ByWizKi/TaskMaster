@@ -1,0 +1,9 @@
+feat: Short description of the feature (#issue-number)
+
+- Detail 1
+- Detail 2
+
+# Guidelines:
+# - Use prefixes like feat:, fix:, chore:, etc.
+# - Reference an issue number (e.g., #42)
+# - Keep the subject line under 72 characters
