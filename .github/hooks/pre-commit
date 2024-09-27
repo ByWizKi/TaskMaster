@@ -1,0 +1,21 @@
+#!/bin/sh
+
+# Run Black to autoformat the code
+echo "Running Black to format Python code..."
+docker-compose exec web black .
+
+if [ $? -ne 0 ]; then
+    echo "Black failed to format the code. Commit aborted."
+    exit 1
+fi
+
+# Run Flake8 to check for linting errors
+echo "Running Flake8 to check for linting issues..."
+docker-compose exec web flake8 .
+
+if [ $? -ne 0 ]; then
+    echo "Flake8 detected issues. Commit aborted."
+    exit 1
+fi
+
+echo "Code formatted and linting passed. Proceeding with commit."
